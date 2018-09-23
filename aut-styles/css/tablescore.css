@@ -1,0 +1,18 @@
+.table-score, h2 {
+    font-family: 'Press Start 2P';
+}
+
+.table-score {
+    margin-left: 16%;
+    margin-right: 16%;
+}
+
+th {
+    color: #FFFF00;
+}
+
+tr.second {
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 2px;
+}
+

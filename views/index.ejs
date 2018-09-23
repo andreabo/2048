@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <base href="/">
+
+    <title> Autogame </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <div class="container">
+        <img src="/img/black-logo.png" style="max-width: 9%;margin-top: 1px;">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="margin-right: 50rem;">AutoGame</a>
+    </div>
+</nav>
+
+<!-- Portfolio Grid Section -->
+<section class="portfolio" id="portfolio" style="margin-top: 2%">
+    <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Hey <%= newPlayer %>!</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+            <div class="col-md-12 ml-auto align-content-center">
+                <p class="lead">We are about to play 2048, but with a twist!.<br><br>
+                    Enter up to 18 directional commands with the keyboard's cursor keys and Selenium will execute them once the game starts.</p>
+            </div>
+        </div>
+    </div>
+    <form action="/play" method="POST">
+        <div class="container" style="padding-bottom: 2%">
+            <div class="row">
+                <div class="col-md-12 align-content-center">
+                    <button class="btn btn-default" disabled style="margin-left: 45%" id="confirmCommands">Let's play 2048!</button>
+                </div>
+            </div>
+        </div>
+        <div id="alertsDiv"></div>
+        <div id="commands">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 ml-auto" id="test-col-1">
+                    </div>
+
+                    <div class="col-md-4 ml-auto" id="test-col-2">
+                    </div>
+
+                    <div class="col-md-4 ml-auto" id="test-col-3">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/freelancer.min.js"></script>
+<script src="static/clientIndex.js"></script>
+<script type="module" src="//cdnjs.cloudflare.com/ajax/libs/deepstream.io-client-js/2.1.1/deepstream.js"></script>
+
+
+</body>
+
+</html>
