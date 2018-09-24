@@ -17,7 +17,8 @@ global.currentValues = {};
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public/'));
 
-app.use(express.static(__dirname + '/node_modules/aut-styles/'));
+// app.use(express.static(__dirname + '/node_modules/aut-styles/'));
+app.use(express.static(__dirname + '/aut-styles/'));
 app.use(express.static(__dirname + '/img/'));
 
 app.set('view engine', 'ejs');
