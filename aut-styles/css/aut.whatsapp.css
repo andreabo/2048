@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'open-sans-bold';
+    src: url('fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'open-sans-semi-bold';
+    src: url('fonts/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'open-sans-regular';
+    src: url('fonts/OpenSans-Regular.ttf');
+}
+
+body {
+    background-color: #FFF !important;
+    background-image: url('/img/bg.png');
+}
+
+.text-white {
+    color: #fcfcff !important;
+}
+
+.bg-primary {
+    background-color: transparent !important;
+}
+
+.bg-secondary {
+    background-color: #065E55 !important;
+}
+
+#mainNav .navbar-brand {
+    font-family: 'open-sans-bold';
+    font-size: 30px;
+    color: #FFF;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+}
+
+#mainNav .container {
+    height: 106px;
+}
+
+.logo {
+    width: 65px;
+}
+
+.brand-logo {
+    width: 40px;
+}
+
+.text-secondary {
+    color: #606770 !important;
+}
+
+h2 {
+    font-family: 'open-sans-bold', 'sans-serif';
+}
+
+.table-score tbody {
+    color: #606770 !important;
+    font-weight: lighter;
+    font-family: 'open-sans-regular', 'sans-serif';
+}
+
+.table-score {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-family: 'open-sans-regular', 'sans-serif';
+}
+
+.btn-go-registry {
+    height: 67px;
+    width: 252px;
+    border-radius: 10px;
+    background-color: #FFF;
+    font-family: 'open-sans-bold', 'sans-serif';
+    font-size: 17px;
+    color: #606770;
+    border: 0;
+    margin-top: 25px;
+    cursor: pointer;
+    box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+}
+
+.btn-go-registry:hover {
+    background-color: #6f7fa0;
+}
+
+.footer {
+    display: none;
+}
+
+h2 {
+    font-size: 36pt;
+    text-transform: uppercase;
+}
+
+th {
+    font-family: 'open-sans-bold', 'sans-serif';
+    font-size: 15px;
+    color: #606770;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+tr.second {
+    border-bottom: 0;
+}
+
+th span {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background: no-repeat 50% 0px;
+    margin-bottom: 30px;
+    background-size: 50px;
+}
+
+.th-position {
+    background-image: url('/img/emoji/sun-glass.svg');
+    position: relative;
+    top: -12px;
+}
+
+.th-name {
+    background-image: url('/img/emoji/fun.svg');
+}
+
+.th-score {
+    background-image: url('/img/emoji/smile.svg');
+}
+
+.th-game-score {
+    background-image: url('/img/emoji/blink-eye.svg');
+}
+
+.th-fails {
+    background-image: url('/img/emoji/angry.svg');
+}
+
+@media (min-width: 992px) {
+
+    section h2 {
+
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+}
+

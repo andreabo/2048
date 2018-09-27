@@ -29,6 +29,10 @@
 
     <link href="css/tablescore.css" rel="stylesheet">
 
+     <!--<link href="css/aut.facebook.css" rel="stylesheet">-->
+    <link href="css/aut.whatsapp.css" rel="stylesheet">
+
+
 </head>
 
 <body id="page-top">
@@ -36,8 +40,17 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">
-        <img src="/img/black-logo.png" style="max-width: 9%;margin-top: 1px;">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="margin-right: 50rem;">AutoGame</a>
+        <div>
+            <!--
+            <img src="/img/autogame_logo-fb.png" class="logo">
+            -->
+            <img src="/img/autogame_logo-whatsapp.png" class="logo">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">AutoGame</a>
+        </div>
+        <div>
+            <!-- <img src="/img/logo-messenger.png" class="brand-logo" alt="Logo Messenger"> -->
+            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="#FFFFFF" fill-opacity=".6" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"></path></svg>
+        </div>
     </div>
 </nav>
 
@@ -46,85 +59,79 @@
 <section class="bg-primary text-white mb-0" id="about">
     <div class="container" style="margin-top: 6%">
         <h2 class="text-center text-uppercase text-secondary mb-0">High Score Table</h2>
-        <hr>
         <div class="row" style="margin-top: 4%">
 
             <div class="col-md-12">
-                <table class="table-score ">
+                <table class="table-score">
                     <thead>
                     <tr>
-                        <th style="padding-right: 102px;"></th>
-                        <!--<th style="width: 25%;">Name</th>-->
-                        <th style="width: 28%;">Name</th>
-                        <th>Final Score</th>
-                        <!--<th style="width: 9%; padding-left: 11%;">Game Score</th>-->
-                        <th style="width: 18%; padding-left: 8%;">Game Score</th>
-                        <!--<th style="padding-left: 5%; width: 9%">Fails</th>-->
-                        <th style="padding-left: 5%; width: 15%">Fails</th>
+                        <th width="100">
+                            <span class="th-position"></span>
+                        </th>
+                        <th style="width: 28%;">
+                            <span class="th-name"></span>
+                            Name
+                        </th>
+                        <th>
+                            <span class="th-score"></span>
+                            Final Score
+                        </th>
+                        <th style="width: 18%;">
+                            <span class="th-game-score"></span>
+                            Game Score
+                        </th>
+                        <th style="width: 15%">
+                            <span class="th-fails"></span>
+                            Fails
+                        </th>
                     </tr>
                     </thead>
                     <tbody>
 
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td style="color: transparent"> .</td>
-                    </tr>
-
                     <% for( var i = 0; i < scores.length; i++){ %>
 
-                    <% if(i == 0){
-                    if(currentValues.player == scores[i].player && currentValues.finalScore == scores[i].finalScore && currentValues.actualScoreInTheGame == scores[i].actualScoreInTheGame){ %>
-                    <tr class="bg-info" class="first">
-                        <% }else{ %>
-                    <tr class="first">
-                        <% } %>
-                        <td>1ST</td>
-                        <% } %>
-
-                        <% if(i == 1){
+                        <% if(i == 0){
                         if(currentValues.player == scores[i].player && currentValues.finalScore == scores[i].finalScore && currentValues.actualScoreInTheGame == scores[i].actualScoreInTheGame){ %>
-                    <tr class="bg-info" class="second">
-                        <% }else{ %>
-                    <tr class="second">
-                        <% } %>
-                        <td>2ND</td>
-                        <% } %>
+                        <tr class="bg-info" class="first">
+                            <% }else{ %>
+                        <tr class="first">
+                            <% } %>
+                            <td>1ST</td>
+                            <% } %>
 
-                        <% if(i == 2){
-                        if(currentValues.player == scores[i].player && currentValues.finalScore == scores[i].finalScore && currentValues.actualScoreInTheGame == scores[i].actualScoreInTheGame){ %>
-                    <tr class="bg-info">
-                        <% }else{ %>
-                    <tr>
-                        <% } %>
-                        <td>3RD</td>
-                        <% } %>
+                            <% if(i == 1){
+                            if(currentValues.player == scores[i].player && currentValues.finalScore == scores[i].finalScore && currentValues.actualScoreInTheGame == scores[i].actualScoreInTheGame){ %>
+                        <tr class="bg-info" class="second">
+                            <% }else{ %>
+                        <tr class="second">
+                            <% } %>
+                            <td>2ND</td>
+                            <% } %>
 
-                        <% if(i >= 3){
-                        if(currentValues.player == scores[i].player && currentValues.finalScore == scores[i].finalScore && currentValues.actualScoreInTheGame == scores[i].actualScoreInTheGame){ %>
-                    <tr class="bg-info">
-                        <% }else{ %>
-                    <tr>
-                        <% } %>
-                        <td><%= i + 1 %>TH</td>
-                        <% } %>
+                            <% if(i == 2){
+                            if(currentValues.player == scores[i].player && currentValues.finalScore == scores[i].finalScore && currentValues.actualScoreInTheGame == scores[i].actualScoreInTheGame){ %>
+                        <tr class="bg-info">
+                            <% }else{ %>
+                        <tr>
+                            <% } %>
+                            <td>3RD</td>
+                            <% } %>
 
-                        <!--No move-->
-                        <td><%= scores[i].player %></td>
-                        <td style="text-align: right"><%= scores[i].finalScore %></td>
-                        <td style="text-align: right"><%= scores[i].actualScoreInTheGame %></td>
-                        <td style="text-align: right"><%= scores[i].fails %></td>
-                    <tr>
-                        <% if(i == 1){ %>
+                            <% if(i >= 3){
+                            if(currentValues.player == scores[i].player && currentValues.finalScore == scores[i].finalScore && currentValues.actualScoreInTheGame == scores[i].actualScoreInTheGame){ %>
+                        <tr class="bg-info">
+                            <% }else{ %>
+                        <tr>
+                            <% } %>
+                            <td><%= i + 1 %>TH</td>
+                            <% } %>
 
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td style="color: transparent"> .</td>
-                    </tr>
-                    <% } %>
+                            <!--No move-->
+                            <td><%= scores[i].player %></td>
+                            <td><%= scores[i].finalScore %></td>
+                            <td><%= scores[i].actualScoreInTheGame %></td>
+                            <td><%= scores[i].fails %></td>
+                        <tr>
 
                     <% } %>
 
@@ -136,7 +143,7 @@
 
         <form action="/" method="GET">
             <div class="text-center mt-4">
-                <button class="btn btn-xl btn-outline-light">
+                <button class="btn-go-registry">
                     Go to Registry
                 </button>
             </div>

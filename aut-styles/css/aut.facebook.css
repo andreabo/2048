@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'open-sans-bold';
+    src: url('fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'open-sans-semi-bold';
+    src: url('fonts/OpenSans-SemiBold.ttf');
+}
+
+body {
+    background-color: #3c5995 !important;
+}
+
+.text-white {
+    color: #fcfcff !important;
+}
+
+.bg-primary {
+    background-color: #3c5995 !important;
+}
+
+.bg-secondary {
+    background-color: #FFF !important;
+}
+
+#mainNav .navbar-brand {
+    color: #3d5791;
+    font-family: 'open-sans-bold';
+    font-size: 30px;
+    color: #3C5895;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+}
+
+#mainNav .container {
+    height: 95px;
+}
+
+.logo {
+    width: 65px;
+}
+
+.brand-logo {
+    width: 40px;
+}
+
+.text-secondary {
+    color: #FFF !important;
+}
+
+.table-score, h2 {
+    font-family: 'open-sans-bold', 'sans-serif';
+}
+
+.table-score tbody {
+    border-top: solid 2px #A2AEBD;
+}
+
+.table-score {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.btn-go-registry {
+    height: 55px;
+    width: 252px;
+    border-radius: 10px;
+    background-color: #2F4575;
+    font-family: 'open-sans-bold', 'sans-serif';
+    font-size: 17px;
+    color: #FFF;
+    border: 0;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.btn-go-registry:hover {
+    background-color: #6f7fa0;
+}
+
+.footer {
+    display: none;
+}
+
+h2 {
+    font-size: 36pt;
+    text-transform: uppercase;
+}
+
+th {
+    font-family: 'open-sans-semi-bold', 'sans-serif';
+    font-size: 15px;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+tr.second {
+    border-bottom: 0;
+}
+
+th span {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background: no-repeat 50% 0px;
+    margin-bottom: 20px;
+    background-size: 50px;
+}
+
+.th-position {
+    background-image: url('/img/reactions/like-reaction.svg');
+    position: relative;
+    top: -12px;
+}
+
+.th-name {
+    background-image: url('/img/reactions/love-reaction.svg');
+}
+
+.th-score {
+    background-image: url('/img/reactions/fun-reaction.svg');
+}
+
+.th-game-score {
+    background-image: url('/img/reactions/wow-reaction.svg');
+}
+
+.th-fails {
+    background-image: url('/img/reactions/angry-reaction.svg');
+}
+
+tr.first td:first-child {
+    border-top: solid 4px #3578E5;
+}
+
+@media (min-width: 992px) {
+
+    section h2 {
+
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+}
+
